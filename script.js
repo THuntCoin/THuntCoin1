@@ -131,9 +131,9 @@ function rewardUser() {
 
     localStorage.setItem("adsCount", adsCount);
 
-    balance += 35;
+    balance += 300;
 
-    dailyEarnings += 35;
+    dailyEarnings += 300;
 
     localStorage.setItem("balance", balance);
     localStorage.setItem("dailyEarnings", dailyEarnings);
@@ -148,7 +148,7 @@ function rewardUser() {
 
     vibratePhone();
 
-    alert("🎉 Congratulations! You earned 35⭐");
+    alert("🎉 Congratulations! You earned 300⭐");
 
 }
 
@@ -282,14 +282,14 @@ const huntReward = document.getElementById("huntReward");
 const playAgainBtn = document.getElementById("playAgainBtn");
 
 const rewards = [
-    { icon: "⭐", value: 10 },
-    { icon: "⭐", value: 2},
+    { icon: "⭐", value: 100 },
+    { icon: "⭐", value: 20},
     { icon: "⭐", value: 5 },
-    { icon: "⭐", value: 1},
+    { icon: "⭐", value: 100},
     { icon: "💎", value: 5 },
     { icon: "💣", value: 0 },
-    { icon: "⭐", value: 20 },
-    { icon: "⭐", value: 5 },
+    { icon: "⭐", value: 200 },
+    { icon: "⭐", value: 0 },
     { icon: "💣", value: 0 }
 ];
 
@@ -463,7 +463,7 @@ withdrawBtn.onclick = function () {
         return;
     }
 
-    if (amount < 5000) {
+    if (amount < 1000) {
         alert("⚠️ Minimum withdrawal is 5000⭐.");
         return;
     }
