@@ -592,3 +592,11 @@ if(profileNav){
     };
 
           }
+
+const text = document.getElementById("linkText");
+const image = document.getElementById("linkImage");
+
+setInterval(() => {
+    text.classList.toggle("hidden");
+    image.classList.toggle("show");
+}, 4000);
